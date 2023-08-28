@@ -1,8 +1,8 @@
 [{
-    "relation": ["delegate_permission/common.handle_all_urls"],
-    "target": {
-      "namespace": "android_app",
-      "package_name": "work.nostrnet.apk.twa",
-      "sha256_cert_fingerprints": ["3D:05:69:0E:B2:0E:EC:3A:EE:45:74:30:0C:50:75:BA:D2:AC:E2:62:6B:0D:76:9E:FD:D7:6A:95:DC:9B:81:A7"]
-    }
-  }]
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "work.nostrnet.apk.twa",
+        "sha256_cert_fingerprints": ["90:E8:03:F8:99:70:3F:2F:E1:67:F3:3F:2C:38:C6:06:28:19:37:F3:9C:3D:64:F9:69:4D:06:C4:C2:99:C2:97"]
+      }
+    }]
