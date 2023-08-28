@@ -1,0 +1,248 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+body {
+  overscroll-behavior-y: contain;
+  font-family: 'Open Sans', sans-serif;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+
+}
+
+.left-corner-container {
+  position: absolute;
+  top: 2;
+  left: 0;
+  margin-left: 4px;
+}
+
+.right-corner-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 4px;
+  margin-top: 4px;
+}
+
+.embed{
+  height: 100vh;
+}
+.embed-container {
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  height: 100%;
+    max-height: 100%;
+
+}
+
+.embed-container.active {
+  display: block;
+}
+
+.embed-container.hidden {
+  display: none;
+}
+
+.embed-iframe {
+
+  width: 100%;
+  height: 100;
+  width: 100%;
+    max-width: 100%;
+    
+    height: 100%;
+    max-height: 100%;
+}
+
+
+.full-width-container {
+  width: 100%;
+
+}
+
+
+
+/* Add this CSS to your stylesheets */
+.input-style {
+  background-color: #252528;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 9999px;
+  outline: none;
+  width: 300px;
+  /* Take up full width on small screens */
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.input-style::placeholder {
+  color: #606871;
+  font-weight: bold;
+
+}
+
+.input-style2 {
+  background-color: rgb(46, 46, 51);
+  color: #ffffff;
+  font-size: 12px;
+  border: none;
+  border-radius: 9px;
+  outline: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+
+
+
+.input-style:focus {
+  background-color: #353237;
+}
+
+@media (min-width: 768px) {
+  .input-style {
+    width: 600px;
+  }
+}
+
+/* Increase width on medium and larger screens */
+@media (min-width: 668px) {
+  .input-style {
+    width: 500px;
+  }
+}
+
+/* Add this CSS to your stylesheet */
+#install-banner {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+.ext-model {
+  transition: opacity 0.3s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+
+}
+
+.close-all-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #ffffff;
+  cursor: pointer;
+
+}
+
+.ext-model.open {
+  display: flex;
+}
+
+.ext-model-content {
+  background-color: #1c1c1e;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 0px;
+  right: 30px;
+  background: none;
+  border: none;
+  font-size: 25px;
+  color: #ffffff;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.website-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.website-button {
+  background-color: #4a4a4d;
+  color: #ffffff;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bold;
+}
+
+
+.website-button:hover {
+  background-color: #323235;
+}
+
+.iframe-container2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 70vh;
+  width: screen;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.embed-iframe2 {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.noteitem{
+  height: 100%;
+}
+
+
+
+
+
+@media (min-width: 868px) {
+  .main-btn {
+    padding-left: 120px
+        /* 80px */
+      ;
+      padding-right: 120px
+        /* 80px */
+      ;
+    
+  }
+}
